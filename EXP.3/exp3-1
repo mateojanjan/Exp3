@@ -1,0 +1,50 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+#include<conio.h>
+
+using namespace std;
+
+
+int main()  
+{
+    int x,b,arr[10];
+    int big; 
+    int low = arr[0];
+    float c; 
+    
+    cout<<"Please enter 10 numbers: \n";
+    for(x=0;x<=9;x++)
+    {
+     cin >> arr[x];
+     b += arr[x];
+    }
+    
+    for(x=0;x<=9;x++)
+    {
+          
+    if (arr[x] > big)
+    {
+        big = arr[x];
+    }
+    }
+		
+    for(x=0;x<=9;x++)
+    {
+          
+    if (arr[x] < low)
+    {
+        low = arr[x];
+    }
+    }
+    
+
+    cout << "LARGEST: " << big << "\n";
+    cout << "SMALLEST: " << low << "\n";
+    cout << "SUM: " << b << "\n";
+	c = b/10;
+    cout << "AVERAGE: " << c << "\n";
+
+	getch();
+    return 0;
+}
